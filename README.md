@@ -24,6 +24,7 @@ Certifique-se de que o Node.js está instalado. Em seguida, instale as dependên
 Bash
 
 npm install axios cheerio
+
 2. Execução
 Execute o script principal diretamente no terminal:
 
