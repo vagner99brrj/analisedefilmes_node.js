@@ -1,45 +1,27 @@
-Análise de Dados de Filmes com Node.js
-Este projeto foi desenvolvido para extrair e processar dados de filmes, utilizando o ambiente Node.js. Ele demonstra a integração do cliente HTTP Axios e a capacidade de consumir dados de uma API, após resolver desafios de rede em ambientes de desenvolvimento online.
+Projeto de Consumo de API (Axios + Node.js)
+Este é um projeto simples em Node.js que demonstra o consumo de uma API externa usando a biblioteca Axios.
 
-Tecnologias Utilizadas
-Node.js: Ambiente de execução.
-
-Axios: Cliente HTTP para fazer requisições de forma assíncrona.
-
-Cheerio: Biblioteca de parsing HTML (originalmente planejada para web scraping).
-
-Detalhe da Solução de Rede
-O objetivo inicial era realizar web scraping da Wikipedia. No entanto, o ambiente de desenvolvimento online (como o StackBlitz) ativou um bloqueio de rede (socket hang up / ECONNRESET) ao tentar se conectar com a Wikipedia.
-
-Para garantir que a lógica do código pudesse ser testada, o projeto foi configurado para:
-
-Utilizar o Axios e o Node.js com sintaxe correta e robusta.
-
-Consumir uma API de Teste (jsonplaceholder.typicode.com) que retorna dados em formato JSON, simulando a resposta que seria esperada de uma API oficial.
-
-Como Rodar o Projeto
-1. Instalação
-Certifique-se de que o Node.js está instalado. Em seguida, instale as dependências:
-
+🛠️ Configuração Rápida
+1. Instalar
+Instale o Axios (a única dependência necessária para este código):
 Bash
+npm install axios
 
-npm install axios cheerio
-
-2. Execução
-Execute o script principal diretamente no terminal:
-
+2. Rodar
+Execute o script diretamente no terminal:
 Bash
-
 node index.js
-A saída mostrará a conexão bem-sucedida e o objeto JSON retornado pela API de teste.
+Isto executa o script, conecta-se à API de teste, e exibe os dados no console.
 
-Notas de Desenvolvimento
-Para prosseguir com o alvo original (Wikipedia), há duas rotas recomendadas:
+🎯 Próxima Etapa de Desenvolvimento
+O código está pronto para a conexão de rede. A próxima etapa é construir a lógica de análise de dados.
 
-Rodar Localmente: Clone o projeto e execute-o em sua máquina. Isso geralmente contorna os bloqueios de IP de ambientes de nuvem.
+Status Atual: O código consome a API de teste (jsonplaceholder.typicode.com/posts/1) e apenas exibe o Título e o ID.
 
-Usar a API Oficial: Mudar o código para consumir a MediaWiki API, que é a forma mais robusta e oficial de obter o código-fonte (WikiText) dos artigos, exigindo uma nova lógica de parsing.
+Ação Necessária: Substituir a linha de exibição (console.log) pela lógica de filtragem, mapeamento e análise que processaria uma lista de filmes real.
 
+⚠️ Nota
+O projeto utiliza uma API de Teste para garantir que a funcionalidade de rede possa ser demonstrada em qualquer ambiente de desenvolvimento (como o StackBlitz) sem encontrar bloqueios.
 Autor
 vagner99brrj
 
